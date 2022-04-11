@@ -1,0 +1,189 @@
+﻿@charset "utf-8";
+
+.inner{width:100%; max-width: 1440px; margin:0 auto}
+
+/* layout */
+.wrap{position:relative; width:100%}
+
+/*header*/
+
+#header .logo{
+    width:80px;
+}
+#header .nav{
+   
+}
+/* nav*/
+#nav{position: fixed;
+    z-index: 2;
+    width:100%;
+    
+}
+#nav .inner{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+#nav .main_nav2{
+    color:black
+}
+#nav .nav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    color:#F24D6C
+}
+
+#nav .login{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+#nav .main_nav{ 
+    font-weight: 800;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items: center;}
+
+#nav .main_nav a{
+                padding: 0 20px ;}
+
+ #nav .fran{position:relative;
+            top: -10px}
+
+ #nav .fran img{
+    padding-top:15px;
+    width:80%; 
+    height:75%
+}
+
+
+#nav p{padding: 0 10px}    
+
+#nav h2{display: block;}
+
+#nav .main_nav > li{position: relative;
+    text-align: center;}
+#nav .main_nav > li > a{border-bottom: 3px solid transparent; padding-bottom: 10px;
+}
+#nav .main_nav > li:hover > a{border-bottom-color:#F9A5AF}
+#nav .main_nav > li:hover .main_nav2{
+    display: flex;}  
+
+#nav .main_nav2 {
+        font-weight:500;
+        font-size:1em;
+        position: absolute;
+        width: 200px;
+        left:50%;
+       transform: translate(-50%, 0);
+       /* background-color: aquamarine;*/
+      /*  display: flex; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: none;
+        margin-top: 10px
+     }
+
+     #nav .main_nav2 a{
+            margin-top: 10px;
+
+     }
+   
+    #nav .main_nav2 > li{
+            width:100%; 
+            padding:20px 10px;
+            box-sizing: border-box;
+        }
+
+        #nav .main_nav2 ul a:hover{
+            text-decoration: underline;    
+          
+            }
+
+/*픽스 시행 후 */
+#nav.fix1{
+
+}
+
+#nav.fix2{
+    background-color: #ffff;
+
+}
+
+/*section1*/
+#section1{margin-bottom:20px}
+#section1 img{width:100%}                
+
+
+/* footer */
+footer{
+    font-weight: 500;
+    font-size: medium;
+    width:100%;
+    background-color: #F24D6C;
+}
+
+footer .inner{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+footer .txt{
+    width:100%;
+    margin:20px 0;
+    color:#ffff
+    }
+
+footer .txt > p{
+        margin:10px 10px;
+        }
+
+footer .footer_right{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        width:40%
+    }
+      
+footer .footer_right .pp{
+        margin-bottom:25px;
+        color:#ffff
+    }
+
+footer  .inner .footer_right .pp a{
+        justify-content: space-between;
+        padding:10px;
+        width:calc((100% - 20px * 2) / 3);
+    }
+
+footer  .a{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 30px
+    }
+
+ footer .a img{
+}
+
+
+
+/*a가 움직이지 않게 하는 코드 */
